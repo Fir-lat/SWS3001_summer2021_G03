@@ -61,7 +61,7 @@ export default {
                     title: "17",
                 },
                 {
-                    id: "01",
+                    id: "07",
                     imgUrl: require('../../../../img/gn12.png'),
                     title: "17",
                 },

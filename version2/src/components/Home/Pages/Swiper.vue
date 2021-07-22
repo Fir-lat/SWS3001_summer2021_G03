@@ -46,6 +46,7 @@ export default {
     bakcground: #ccc;
     margin: 0 auto;
 	border-bottom: 2px solid #5e5d5d;
+    border-top: 2px solid #5e5d5d;
     margin: auto;
     width: 80%;
     height: 30%

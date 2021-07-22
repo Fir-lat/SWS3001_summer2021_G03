@@ -39,6 +39,7 @@ export default {
     display: block;
 }
 .university {
+    color: #043a6d;
     font-weight: 300;
     margin-top: 100px;
     text-align: center;

@@ -80,8 +80,6 @@ export default {
 .analysis-left img{
     width: 100%;
     height: auto;
-
-
 }
 .analysis-right {
     width: 48%;
