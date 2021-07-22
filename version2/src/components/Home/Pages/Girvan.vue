@@ -81,10 +81,13 @@ export default {
     padding-top: .5rem;
 }
 .girvan-top {
-    font-weight: 300;
+    font-weight: 1000;
+    color: #043a6d;
     text-align: center;
     display: block;
     padding: .2rem;
+    padding-bottom: 1rem;
+
 }
 .girvan-list {
     overflow-x: scroll;

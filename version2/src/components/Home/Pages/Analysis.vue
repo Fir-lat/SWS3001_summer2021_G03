@@ -24,7 +24,7 @@ export default {
                 {
                     id: "01",
                     imgUrl: require('../../../../img/gn12.png'),
-                    analyze: "←Better perfakjcsnasdkjcmasdcasmdcklasdmcasdlkcmasdcmasldkcmasdlkcmasdc ajdsncmasldkcamdsormance on small dataset in small numbers of iterations, but the community just equals to the relationship of co-author"
+                    analyze: "←Better perf dsakjclsd asdjlasdjl alksdjfasd alksdjflkasdj alsdjflkasjd alsdkjflkasdj asldjflaskj asldkjfliasdj la sdjlkjas asdljfals asdlkjfas,dkjfas dfasdjl akjcsnasdkjcmasdcasmdcklasdmcasdlkcmasdcmasldkcmasdlkcmasdc ajdsncmasldkcamdsormance on small dataset in small numbers of iterations, but the community just equals to the relationship of co-author"
                 },
                 {
                     id: "02",
@@ -63,22 +63,29 @@ export default {
     line-height: .6rem;
 }
 .analysis-item {
-    display: inline-flex;
-    padding-top: .3rem;
-    padding-bottom: .3rem;
+    overflow:hidden;
+    align-items: center;
+    padding-top: .6rem;
+    padding-bottom: .4rem;
     border-bottom: 2px dotted #043a6d;
 }
 .analysis-left {
-    width: 100%;
-    float:left;
-    vertical-align: center;
+    width: 48%;
+    float: left;
+    display: flex;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 .analysis-left img{
     width: 100%;
+    height: auto;
+
+
 }
 .analysis-right {
-    padding-left: .5rem;
-    overflow: hidden;
+    width: 48%;
+    float:right;
 
 }
 </style>
