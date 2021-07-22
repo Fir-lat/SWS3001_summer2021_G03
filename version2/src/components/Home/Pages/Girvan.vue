@@ -77,7 +77,7 @@ export default {
 .girvan {
     margin-top: .2rem;
     background: #fff;
-
+    
 }
 .girvan-top {
     font-weight: 300;
@@ -111,6 +111,7 @@ export default {
     width: 80%;
     margin: 0 auto;
     font-size: .64rem;
+    border-bottom: 2px solid #5e5d5d;
 }
 .girvan-result p{
     font-weight: 100;
