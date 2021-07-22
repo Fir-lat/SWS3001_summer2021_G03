@@ -8,7 +8,7 @@
 </script>
 <style scoped>
 .bottom-footer {
-    background-color: #4a4c4e;
+    background-color: #133555;
     text-align: center;
     padding: 30px 0;
     font-size: 14px;

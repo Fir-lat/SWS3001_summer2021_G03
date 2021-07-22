@@ -6,6 +6,7 @@
         <home-workflow></home-workflow>
         <home-girvan></home-girvan>
         <home-analysis></home-analysis>
+        <home-thanks></home-thanks>
         <home-bottom></home-bottom>
         
     </div>
@@ -18,6 +19,7 @@ import HomeGirvan from './pages/Girvan'
 import HomeBottom from './pages/Bottom'
 import HomeAnalysis from './pages/Analysis'
 import HomeWorkflow from './pages/Workflow'
+import HomeThanks from './pages/Thanks'
 export default {
     components: {
         HomeHeader,
@@ -27,6 +29,7 @@ export default {
         HomeBottom,
         HomeAnalysis,
         HomeWorkflow,
+        HomeThanks
     }
 }
 </script>
