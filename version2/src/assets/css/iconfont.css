@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2690456 */
+  src: url('../font/iconfont.woff2?t=1626943383271') format('woff2'),
+       url('../font/iconfont.woff?t=1626943383271') format('woff'),
+       url('../font/iconfont.ttf?t=1626943383271') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-guojia:before {
+  content: "\e625";
+}
+
+.icon-tongyong-huanyingnitubiao:before {
+  content: "\e63b";
+}
+
+.icon-yewutubiao_keyanxitong:before {
+  content: "\e6f6";
+}
+
+.icon-guojia-diquhei_SIN:before {
+  content: "\e60f";
+}
+
+.icon-guojia-diquhei_CHN:before {
+  content: "\e610";
+}
+
+.icon-guojia-diquhei_USA:before {
+  content: "\e611";
+}
+
+.icon-guojia-diquhei_GBR:before {
+  content: "\e612";
+}
+
+.icon-guojia-diquhei_INA:before {
+  content: "\e613";
+}
+
+.icon-guojia-diquhei_UAE:before {
+  content: "\e614";
+}
+
+.icon-guojia-diquhei_AUS:before {
+  content: "\e615";
+}
+
+.icon-guojia-diquhei_MAS:before {
+  content: "\e616";
+}
+
+.icon-guojia-diquhei_GRE:before {
+  content: "\e617";
+}
+
+.icon-guojia-diquhei_CAN:before {
+  content: "\e618";
+}
+
+.icon-guojia-diqufen_FRA:before {
+  content: "\e619";
+}
+
+.icon-guojia-diqufen_CAN:before {
+  content: "\e61a";
+}
+
+.icon-jiqiren:before {
+  content: "\e82f";
+}
+
+.icon-Arrow-double-right:before {
+  content: "\e608";
+}
+
+.icon-Arrow-double-left:before {
+  content: "\e609";
+}
+
+.icon-Arrow-left:before {
+  content: "\e60a";
+}
+
+.icon-Arrow-right:before {
+  content: "\e60b";
+}
+
+.icon-Arrow-up:before {
+  content: "\e60c";
+}
+
+.icon-Search:before {
+  content: "\e60d";
+}
+
+.icon-xuexiao:before {
+  content: "\e61b";
+}
+
+.icon-Help-filling:before {
+  content: "\e61c";
+}
+
+.icon-Warning-filling:before {
+  content: "\e61d";
+}
+
+.icon-Success-filling:before {
+  content: "\e61e";
+}
+
+.icon-dian:before {
+  content: "\ed9a";
+}
+
+.icon-xuexifenxi:before {
+  content: "\e631";
+}
+
+.icon-xuexi:before {
+  content: "\e7f1";
+}
+
+.icon-falling:before {
+  content: "\e750";
+}
+
+.icon-Rightarrow:before {
+  content: "\e761";
+}
+
+.icon-tradingdata:before {
+  content: "\e7b5";
+}
+
