@@ -3,21 +3,21 @@
         <h1 >Search Result</h1>
         <ul class = "list-scholar">
             <li class = "list-items" v-for="(item, index) in searchResult" :key="index">
-                <div>
-                    <div>
+                <div class = "profile">
+                    <div class = "profile-left">
                         <span class = "iconfont icon">&#xe63b;</span>
                     </div>
                     <div class = "scholar">
-                        <p>{{item.name}}</p>
-                        <p>{{item.affiliation}}</p>
-                        <p v-if="item.coauthors.length">CoAuthors:{{item.coauthors.length}}</p>
+                        <p class="name">{{item.name}}</p>
+                        <p class="school">{{item.affiliation}}</p>
+                        <p v-if="item.coauthors.length" class="number">CoAuthors: {{item.coauthors.length}}</p>
                     </div>
                 </div>
                 <ul class = "list-coauthors">
                     <li class = "list-item" v-for="(coauthor, index) in item.coauthors" :key="index">
-                        <span class = "iconfont">&#xe61e;</span>
+                        <span class = "iconfont icon-small">&#xe60b;</span>
                         <div>
-                            <p>{{coauthor.name}}</p>
+                            <p>{{index+1}}. {{coauthor.name}}</p>
                         </div>
                     </li>
                 </ul>
@@ -221,29 +221,91 @@ export default {
     margin: .5rem auto;
     width:90%;
     font-size: .5rem;
-    display: flex;
     align-items: center;
+    
 }
+
 .list h1{
-    margin: .5rem auto;
+    font-weight: 1000;
+    font-size: 1rem;
+    color: #043a6d;
+    display: block;
+    padding: .2rem;
+    border-bottom: 2px dotted #043a6d;
+    margin-bottom: .5rem; 
 }
-.list-scholar {
+.profile {
+    display: inline-block;
+    padding: 20px auto 0px 30px;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-weight: 100;
+    position: relative;
+    overflow: hidden;
 
 }
-.icon {
-    font-size: 100px;
-}
+
 .scholar {
     font-size: .64rem;
-
+    display: block;
+    margin: 20px 30px 20px 30px;
+    left: 0;
+    flex:0;
 }
+.name {
+    font-weight: 100;
+    font-size: 44px
+}
+.school {
+    font-size: 20px;
+    line-height: .5rem;
+}
+.number {
+    margin-top: .5rem;
+    padding-top: 10px;
+    font-size: 25px;
+    margin-bottom: .5rem;
+}
+.profile-left {
+    float: left;
+}  
+
+.icon {
+    font-size: 4rem;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+
 .list-items {
+    border: 0;
+    border-radius: 30px;
+    margin: 50px auto;
+    background: #afd8ff;
+    box-shadow: 2px 2px 5px 1px #ccc;
+    padding-bottom: 2px;
 
 }
 .list-coauthors {
-
+    background: #fff;
+    margin: 5px 30px 30px 30px;
+    padding: 20px;
+    display: block;
+    border: 2px  #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px #ccc inset;
 }
 .list-item {
-
+    display:flex;
+    margin: 20px;
+}
+.list-item span{
+    font-size: 32px;
+    margin-right:20px;
+}
+.list-item p{
+    font-size: 32px;
+    font-weight: 100;
 }
 </style>

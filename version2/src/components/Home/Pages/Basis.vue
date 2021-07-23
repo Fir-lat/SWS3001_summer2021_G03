@@ -89,27 +89,29 @@ export default {
     background: #b8d9f8;
     margin: 0 .3rem;
 
-    border-radius: 3%;
+    border-radius: 10px;
     width: 33%;
-    float: left
-
+    float: left;
+    box-shadow: 2px 2px 5px 1px #ccc;
 }
 .basis-mid {
     background: #b8d9f8;
     margin: 0 .3rem;
 
-    border-radius: 3%;
+    border-radius: 10px;
     width: 33%;
     margin: auto;
+    box-shadow: 2px 2px 5px 1px #ccc;
 
 }
 .basis-right {
     background: #b8d9f8;
     margin: 0 .3rem;
 
-    border-radius: 3%;
+    border-radius: 10px;
     width: 33%;
     float:right;
+    box-shadow: 2px 2px 5px 1px #ccc;
 
 }
 .basis-title {

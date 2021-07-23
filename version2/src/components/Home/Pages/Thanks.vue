@@ -1,10 +1,13 @@
 <template>
     <div class = "thanks">
         <h1>
-            Special Thanks
+            Special Thanks to
         </h1>
-        <img src="../../../../img/serpapi.png" alt="">
-        <p>Thanks a lot</p>
+        <a href="https://serpapi.com/">
+            <img src="../../../../img/serpapi.png" alt="">
+        </a>
+        
+        
     </div>
 </template>
 <script>
@@ -27,10 +30,10 @@
 }
 .thanks img{
     display: block;
-    margin: .1rem auto .2rem auto;
+    margin: .1rem auto 0rem auto;
     width: 20%;
     object-fit: cover;
-    padding-bottom: .4rem;
+    padding-bottom: 1rem;
 }
 .thanks p{
     font-size:80%;

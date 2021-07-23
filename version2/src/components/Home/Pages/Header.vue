@@ -1,13 +1,25 @@
 <template>
     <div class = "header">
-        <div class = 'header-left'>
-            <span class = "iconfont icon">
-                &#xe7f1;
-            </span>
-        </div>
-        <div class = "title">
-            <span>Academic Collaboration Analysis</span> 
-        </div>
+        
+            <div class = 'header-left'>
+                <router-link to='/'>
+                <span class = "iconfont icon" style="color:#fff" >
+                    &#xe7f1;
+                </span>
+                </router-link>
+            </div>
+            
+        
+        
+            <div class = "title" >
+                <router-link to='/'>
+                <span style="color:#fff">Academic Collaboration Analysis</span> 
+                </router-link>
+            </div>
+        
+            
+            
+        
         <div class = "header-search">
             <router-link to='/Scholar'>
                 <span class = "iconfont icon">
@@ -27,7 +39,10 @@
     </div>
 </template>
 <script>
-
+export default {
+    
+}
+    
 </script>
 <style scoped lang='stylus'>
 @import '~css/var.styl'
@@ -47,6 +62,7 @@
     padding: 0 .2rem;
     text-align: center;
     font-weight: bold;
+    color: #fff;
 }
 .title {
     font-size: .52rem;
@@ -54,6 +70,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    color: #fff;
 }
 .header-search {
     flex: 1;
@@ -80,4 +97,5 @@
 .header-right a{
     color: #fff;
 }
+
 </style>

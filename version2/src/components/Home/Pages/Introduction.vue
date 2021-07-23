@@ -6,7 +6,7 @@
             </span>
             <br>
             <span class = "projectName">
-                SWS3001 SUMMER 2021
+                SUMMER WORKSHOP 2021 SWS3001
             </span>
             <br>
             <span class = "teammates">

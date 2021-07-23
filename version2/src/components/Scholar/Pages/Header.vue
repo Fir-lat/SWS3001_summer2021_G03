@@ -1,20 +1,32 @@
 <template>
     <div class = "header">
-        <div class = 'header-left'>
-            <span class = "iconfont icon">
-                &#xe7f1;
-            </span>
-        </div>
-        <div class = "title">
-            <span>Academic Collaboration Analysis</span> 
-        </div>
-        <div class = "header-search">
-            <router-link to='/Scholar'>
+            <div class = 'header-left'>
+                <router-link to='/'>
+                <span class = "iconfont icon" style="color:#fff" >
+                    &#xe7f1;
+                </span>
+                </router-link>
+            </div>
+            
+        
+        
+            <div class = "title">
+                <router-link to='/'>
+                <span style="color:#fff">Academic Collaboration Analysis</span> 
+                </router-link>
+            </div>
+        
+            
+            
+        
+        <div id = "headerSearch" class = "header-search">
+            
                 <span class = "iconfont icon">
                     &#xe631;
                 </span>
-                Input scholar's name
-            </router-link>
+                <input  id = "search" type="text" placeholder="Input scholar's name">
+                
+            
             
         </div>
         <div class = "header-right">
@@ -27,7 +39,18 @@
     </div>
 </template>
 <script>
-
+export default {
+    
+    mounted() {
+        this.sameWidth();
+    },
+    methods: {
+        sameWidth: function() {
+            var width = document.getElementById("headerSearch").offsetWidth; 
+            document.getElementById("search").style.width = width-53+"px";
+        }
+    }
+}
 </script>
 <style scoped lang='stylus'>
 @import '~css/var.styl'
@@ -65,6 +88,31 @@
     line-height: .9rem;
     font-size: .56rem;
     padding-left: .2rem;
+    
+}
+.header-search input{
+    background-color:transparent;
+    position: absolute;
+    border:0;
+    outline: 0;
+    
+    height: .68rem;
+    margin: .14rem auto;
+    border-radius: .4rem;
+    color: #122e49;
+    line-height: .9rem;
+    font-size: .56rem;
+    padding-left: 9.5px;
+
+
+    display: inline-block;
+    *display: inline;
+    width: px;
+}
+.header-search input::-webkit-input-placeholder{
+    font-size: .56rem;
+    font-family: "Microsoft YaHei";
+    color: #e4e7ea;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;

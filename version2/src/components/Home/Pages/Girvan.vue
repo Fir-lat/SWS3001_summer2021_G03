@@ -90,6 +90,8 @@ export default {
 
 }
 .girvan-list {
+    width: 80%;
+    margin: 0 auto;
     overflow-x: scroll;
     white-space: nowrap;
     overflow-y: hidden;
