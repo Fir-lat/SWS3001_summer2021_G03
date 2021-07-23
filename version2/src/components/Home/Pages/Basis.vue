@@ -41,6 +41,7 @@ export default {
     mounted() {
         //window.addEventListener('mousedown', this.sameHeight);
         this.sameHeight();
+        
     },
     methods: {
         sameHeight:function() {
@@ -63,7 +64,7 @@ export default {
     width:90%;
     font-size: .5rem;
     display: flex;
-    align-items: center;;
+    align-items: center;
 
 
 }
