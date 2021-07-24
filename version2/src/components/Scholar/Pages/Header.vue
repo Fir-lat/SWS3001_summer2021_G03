@@ -24,23 +24,30 @@
                 <span class = "iconfont icon">
                     &#xe631;
                 </span>
-                <input  id = "search" type="text" placeholder="Input scholar's name">
+                <input  id = "search" type="text" placeholder="Input scholar's name"  @keyup.enter="searchScholar">
                 
             
             
         </div>
-        <div class = "header-right">
-            <router-link to='/Scholar'>
-                search<span class = "iconfont icon">
+        <div class = "header-right" @click="searchScholar">
+                
+                search<span class = "iconfont icon" >
                     &#xe761;
                 </span>
-            </router-link>
+            
         </div>
     </div>
 </template>
 <script>
 export default {
-    
+    data: {
+        
+    },
+    data() {
+        return {
+            
+        }
+    },
     mounted() {
         this.sameWidth();
     },
@@ -48,6 +55,10 @@ export default {
         sameWidth: function() {
             var width = document.getElementById("headerSearch").offsetWidth; 
             document.getElementById("search").style.width = width-53+"px";
+        },
+        searchScholar: function() {
+            
+            this.$emit('scholarSearch', document.getElementById("search").value);
         }
     }
 }

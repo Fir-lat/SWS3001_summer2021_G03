@@ -36,10 +36,7 @@ export default {
     },
     mounted() {
         this.getHttp();
-        this.$http.get("http://localhost:8080/static/mock/data.json")
-        .then((res)=>{
-            console.log(res);
-        })
+        
     },
     methods: {
         getHttp:function() {

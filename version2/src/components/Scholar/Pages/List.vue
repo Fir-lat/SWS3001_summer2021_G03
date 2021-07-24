@@ -1,7 +1,33 @@
 <template>
     <div class = "list">
         <h1 >Search Result</h1>
-        <ul class = "list-scholar">
+        <ul v-show="result.length != 0" class = "list-scholar">
+            <li class = "list-items" v-for="(item, index) in result" :key="index">
+                <div class = "profile">
+                    <div class = "profile-left">
+                        <span class = "iconfont icon">&#xe63b;</span>
+                    </div>
+                    <div class = "scholar">
+                        <p class="name">{{item.name}}</p>
+                        <p class="school">{{item.affiliation}}</p>
+                        <p v-if="item.coauthors" class="number">CoAuthors: {{item.coauthors.length}}</p>
+                    </div>
+                </div>
+                <ul class = "list-coauthors">
+                    <li class = "list-item" v-for="(coauthor, index) in item.coauthors" :key="index">
+                        <span class = "iconfont icon-small">&#xe60b;</span>
+                        <div>
+                            <p>{{index+1}}. {{coauthor.name}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div v-show="result.length == 0">
+            <div class="default">
+                Oops! There isn't a scholar called {{inputName}}. Try these ones...
+            </div>
+            <ul class = "list-scholar">
             <li class = "list-items" v-for="(item, index) in searchResult" :key="index">
                 <div class = "profile">
                     <div class = "profile-left">
@@ -23,10 +49,12 @@
                 </ul>
             </li>
         </ul>
+        </div>
     </div>
 </template>
 <script>
 export default {
+    props : ['inputName', 'result'],
     data() {
         return {
             searchResult: [
@@ -205,7 +233,6 @@ export default {
                     ]
                 },
             ],
-
         }
     },
     mounted() {
@@ -224,7 +251,15 @@ export default {
     align-items: center;
     
 }
-
+.default {
+    font-weight: 100;
+    font-size: .5rem;
+    color: #043a6d;
+    display: block;
+    padding: .2rem;
+    margin-bottom: .5rem;
+    padding-top: .5rem; 
+}
 .list h1{
     font-weight: 1000;
     font-size: 1rem;
