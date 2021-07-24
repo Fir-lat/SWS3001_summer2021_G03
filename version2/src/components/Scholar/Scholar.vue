@@ -1,7 +1,7 @@
 <template>
     <div>
         <scholar-header v-on:scholarSearch="inputSearch"></scholar-header>
-        <scholar-list :result="result" :inputName="inputName"></scholar-list>
+        <scholar-list :result="result" :inputName="inputName" :oops="oops"></scholar-list>
         <scholar-bottom></scholar-bottom>
     </div>
 </template>
@@ -22,7 +22,8 @@ export default {
     data() {
         return {
             result: [],
-            inputName: ""
+            inputName: "",
+            oops: false,
         }
     },
     mounted() {
@@ -31,6 +32,7 @@ export default {
     methods: {
         inputSearch(param) {
             this.inputName = param;
+            this.clearResult();
             this.$http.get("http://localhost:8080/static/mock/data.json")
             .then((res)=>{
                 var scholarResult = res.data.data;
@@ -41,9 +43,15 @@ export default {
                         this.result.push(scholarResult[item]);
                     }
                 }
-                alert(scholarResult[1].name);
-                console.log(this.result);   
+                if(this.result.length == 0) {
+                    this.oops = true;
+                }
+                else this.oops = false;
+                console.log(this.result); 
             })  
+        },
+        clearResult() {
+            this.result=[];
         }
     }
 }

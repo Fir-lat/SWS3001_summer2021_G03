@@ -110,7 +110,7 @@ export default {
     height: .68rem;
     margin: .14rem auto;
     border-radius: .4rem;
-    color: #122e49;
+    color: #043a6d;
     line-height: .9rem;
     font-size: .56rem;
     padding-left: 9.5px;
