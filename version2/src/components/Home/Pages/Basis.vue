@@ -1,4 +1,5 @@
 <template>
+<div class="container">
     <div class="basis">
         <div id="left" class="basis-left">
             <h2>
@@ -7,13 +8,22 @@
             <p><span class ="iconfont">&#xe6f6;</span>
                 There have been research social network websites dedicated to scholars, such as Google Scholar.
             </p>
+            <p><span class ="iconfont">&#xe6f6;</span>
+                Collect the information of cooperation between scholars by Google Scholar Co-Authors API.
+            </p>
+            <p><span class ="iconfont">&#xe6f6;</span>
+                Involve multiple algorithms to cluster the communities of scholars  from multiple universities
+            </p>
         </div>
         <div id="mid" class="basis-mid">
             <h2>
                 Objective
             </h2>
             <p><span class ="iconfont">&#xe6f6;</span>
-                There have been research social network websites dedicated to scholars, such as Google Scholar.
+                To identify and analyse communities in cooperation among scholars.
+            </p>
+            <p><span class ="iconfont">&#xe6f6;</span>
+                To help people find scholars doing similar research and potential collaborators.
             </p>
         </div> 
         <div id="right" class="basis-right">
@@ -21,14 +31,13 @@
                 Overview
             </h2>
             <p><span class ="iconfont">&#xe6f6;</span>
-                There have been research social network websites dedicated to scholars, such as Google Scholar.
-            </p>
-            <p><span class ="iconfont">&#xe6f6;</span>
-                There have been research social network websites dedicated to scholars, such as Google Scholar.
+                We collected the co-authors of 1490 preeminent scholars and calculated the similarity basing on the times they have collaborated. After formed graph, we adopted multiple algorithms to cluster the communities. What we expect to find out is that scholars are divided by specific fields or laboratories rather than universities.
             </p>
         </div>
         
     </div>
+</div>
+    
 </template>
 <script type="text/javascript">
 
@@ -39,38 +48,81 @@ export default {
         }
     },
     mounted() {
-        //window.addEventListener('mousedown', this.sameHeight);
-        this.sameHeight();
-        
+
+        this.adjustWidth();
     },
     methods: {
-        sameHeight:function() {
-            var height = Math.max(
+        // sameHeight:function() {
+            
+        //     var height = Math.max(
+        //         document.getElementById("left").offsetHeight,
+        //         document.getElementById("mid").offsetHeight,
+        //         document.getElementById("right").offsetHeight,
+        //     );
+        //     console.log(height);
+        //     document.getElementById("left").style.height = height+"px";
+        //     document.getElementById("mid").style.height = height+"px";
+        //     document.getElementById("right").style.height = height+"px";
+        // },
+        adjustWidth:function() {
+            var width = document.body.clientWidth;
+            console.log(width);
+            if( width > 760) {
+                document.getElementById("left").style.width = width * 0.76*0.3333 +"px";
+                document.getElementById("mid").style.width = width * 0.76*0.3333 +"px";
+                document.getElementById("right").style.width = width * 0.76*0.3333 +"px";
+                var height = Math.max(
                 document.getElementById("left").offsetHeight,
                 document.getElementById("mid").offsetHeight,
                 document.getElementById("right").offsetHeight,
-            );
-            document.getElementById("left").style.height = height+"px";
-            document.getElementById("mid").style.height = height+"px";
-            document.getElementById("right").style.height = height+"px";
+                );
+                console.log(height);
+                document.getElementById("left").style.height = height+"px";
+                document.getElementById("mid").style.height = height+"px";
+                document.getElementById("right").style.height = height+"px";
+            }
+            else {
+                document.getElementById("left").style.width = width * 0.76 +"px";
+                document.getElementById("mid").style.width = width * 0.76 +"px";
+                document.getElementById("right").style.width = width * 0.76 +"px";
+            }
         }
+        
     }
     
 }
 </script>
 <style scoped>
-.basis {
+.container{
     margin: .5rem auto;
-    width:90%;
-    font-size: .5rem;
+    margin-bottom: 35px;
+    width: 80%;
     display: flex;
-    align-items: center;
 
+}
+.basis {
+    
+    width:100%;
+    font-size: .5rem;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
 
 }
 .basis div{
-    display: table-cell;
+
+    float:left;
+    margin-right: 10px;
+    margin-left:10px;
+    margin-top: 25px;
     height: auto;
+    overflow: initial;
+
+    border-radius: 10px;
+    background: #b8d9f8;
+    box-shadow: 2px 2px 5px 1px #ccc;
+
 }
 .basis h2{
     margin: .3rem auto;
@@ -86,40 +138,26 @@ export default {
     line-height: .56rem;
 }
 .basis-left {
-    background: #b8d9f8;
-    margin: 0 .3rem;
 
-    border-radius: 10px;
-    width: 33%;
-    float: left;
-    box-shadow: 2px 2px 5px 1px #ccc;
+
+
+
+
 }
 .basis-mid {
-    background: #b8d9f8;
-    margin: 0 .3rem;
 
-    border-radius: 10px;
-    width: 33%;
-    margin: auto;
-    box-shadow: 2px 2px 5px 1px #ccc;
+
+
+
+
 
 }
 .basis-right {
-    background: #b8d9f8;
-    margin: 0 .3rem;
 
-    border-radius: 10px;
-    width: 33%;
-    float:right;
-    box-shadow: 2px 2px 5px 1px #ccc;
+
+
+
 
 }
-.basis-title {
-    font-weight: 100;
-    font-size: .64rem;
-}
-.basis-content {
-    font-weight: 100;
-    font-size: .42rem;
-}
+
 </style>

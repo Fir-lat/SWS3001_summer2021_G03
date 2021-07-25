@@ -35,6 +35,7 @@ export default {
             this.clearResult();
             this.$http.get("http://localhost:8080/static/mock/data.json")
             .then((res)=>{
+                console.log(res);
                 var scholarResult = res.data.data;
                 
                 for(var item = 0;item < scholarResult.length; item++) {

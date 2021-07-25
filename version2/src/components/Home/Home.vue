@@ -6,6 +6,10 @@
         <home-swiper></home-swiper>
         <home-workflow></home-workflow>
         <home-girvan></home-girvan>
+        <home-kclique></home-kclique>
+        <home-asyn-lpa></home-asyn-lpa>
+        <home-asyn-fluidc></home-asyn-fluidc>
+        <home-greedy></home-greedy>
         <home-analysis></home-analysis>
         <home-thanks></home-thanks>
         <home-bottom></home-bottom>
@@ -22,6 +26,10 @@ import HomeAnalysis from './pages/Analysis'
 import HomeWorkflow from './pages/Workflow'
 import HomeThanks from './pages/Thanks'
 import HomeBasis from './pages/Basis'
+import HomeAsynFluidc from './pages/AsynFluidc'
+import HomeAsynLpa from './pages/AsynLpa'
+import HomeGreedy from './pages/Greedy'
+import HomeKclique from './pages/Kclique'
 export default {
     components: {
         HomeHeader,
@@ -32,7 +40,11 @@ export default {
         HomeAnalysis,
         HomeWorkflow,
         HomeThanks,
-        HomeBasis
+        HomeBasis,
+        HomeAsynFluidc,
+        HomeAsynLpa,
+        HomeGreedy,
+        HomeKclique,
     },
     mounted() {
         this.getHttp();
