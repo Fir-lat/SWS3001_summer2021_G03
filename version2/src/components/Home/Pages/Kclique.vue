@@ -6,7 +6,7 @@
         <ul class = "girvan-list">
             <li class = "girvan-item" v-for='item in girvanList' :key='item.id'>
                 <img :src="item.imgUrl" alt="">
-                <p >GN{{item.title}}</p>
+                <p >k = {{item.title}}</p>
             </li>
         </ul>
         <div class = "girvan-result">
@@ -35,38 +35,23 @@ export default {
             girvanList: [
                 {
                     id: "01",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/k-clique3.png'),
+                    title: "3",
                 },
                 {
                     id: "02",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/k-clique4.png'),
+                    title: "4",
                 },
                 {
                     id: "03",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/k-clique5.png'),
+                    title: "5",
                 },
                 {
                     id: "04",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
-                {
-                    id: "05",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
-                {
-                    id: "06",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
-                {
-                    id: "07",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/k-clique6.png'),
+                    title: "6",
                 },
             ]
         }
@@ -101,8 +86,8 @@ export default {
 }
 .girvan-item {
     padding: 0 .2rem;
-    width: 7rem;
-    height: 5rem;
+    width: 14rem;
+    height: 9rem;
     display: inline-block;
 }
 .girvan-item img {

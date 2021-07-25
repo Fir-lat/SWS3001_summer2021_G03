@@ -6,7 +6,7 @@
         <ul class = "girvan-list">
             <li class = "girvan-item" v-for='item in girvanList' :key='item.id'>
                 <img :src="item.imgUrl" alt="">
-                <p >GN{{item.title}}</p>
+                <p >{{item.title}}</p>
             </li>
         </ul>
         <div class = "girvan-result">
@@ -22,6 +22,9 @@
             <p><span class = "iconfont icon">
                 &#xe608;
             </span>This algorithm runs very fast, but it cannot control the number of communities and will generate communities with a large number of points.</p>
+            <p><span class = "iconfont icon">
+                &#xe608;
+            </span>If a community is too big, we can simply apply the greedy algorithm to it. The Third picture shows it.</p>
         </div>
     </div>
 </template>
@@ -32,39 +35,20 @@ export default {
             girvanList: [
                 {
                     id: "01",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/greedy1.png'),
+                    title: "Small dataset",
                 },
                 {
                     id: "02",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/greedy2.png'),
+                    title: "Big dataset",
                 },
                 {
                     id: "03",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/greedy3.png'),
+                    title: "\"Divide Conquer\"",
                 },
-                {
-                    id: "04",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
-                {
-                    id: "05",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
-                {
-                    id: "06",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
-                {
-                    id: "07",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
+                
             ]
         }
     }
@@ -98,8 +82,8 @@ export default {
 }
 .girvan-item {
     padding: 0 .2rem;
-    width: 7rem;
-    height: 5rem;
+    width: 14rem;
+    height: 9rem;
     display: inline-block;
 }
 .girvan-item img {

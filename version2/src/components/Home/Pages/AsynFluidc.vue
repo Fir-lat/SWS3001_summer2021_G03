@@ -6,7 +6,7 @@
         <ul class = "girvan-list">
             <li class = "girvan-item" v-for='item in girvanList' :key='item.id'>
                 <img :src="item.imgUrl" alt="">
-                <p >GN{{item.title}}</p>
+                <p >Async-Fluidc given {{item.title}} communities</p>
             </li>
         </ul>
         <div class = "girvan-result">
@@ -32,38 +32,43 @@ export default {
             girvanList: [
                 {
                     id: "01",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/asynfluidc4.png'),
+                    title: "4",
                 },
                 {
                     id: "02",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/asynfluidc9.png'),
+                    title: "9",
                 },
                 {
                     id: "03",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/asynfluidc15.png'),
+                    title: "15",
                 },
                 {
                     id: "04",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/asynfluidc21.png'),
+                    title: "21",
                 },
                 {
                     id: "05",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/asynfluidc29.png'),
+                    title: "29",
                 },
                 {
                     id: "06",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/asynfluidc38.png'),
+                    title: "38",
                 },
                 {
                     id: "07",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/asynfluidc46.png'),
+                    title: "46",
+                },
+                {
+                    id: "08",
+                    imgUrl: require('../../../../img/asynfluidc64.png'),
+                    title: "64",
                 },
             ]
         }
@@ -98,8 +103,8 @@ export default {
 }
 .girvan-item {
     padding: 0 .2rem;
-    width: 7rem;
-    height: 5rem;
+    width: 14rem;
+    height: 9rem;
     display: inline-block;
 }
 .girvan-item img {

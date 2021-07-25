@@ -27,7 +27,7 @@ export default {
         }
     },
     mounted() {
-        
+        document.title="SWS3001 G03"
     },
     methods: {
         inputSearch(param) {

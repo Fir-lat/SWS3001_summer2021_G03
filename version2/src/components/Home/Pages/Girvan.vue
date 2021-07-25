@@ -6,7 +6,7 @@
         <ul class = "girvan-list">
             <li class = "girvan-item" v-for='item in girvanList' :key='item.id'>
                 <img :src="item.imgUrl" alt="">
-                <p >GN{{item.title}}</p>
+                <p >GN with {{item.title}} iterations</p>
             </li>
         </ul>
         <div class = "girvan-result">
@@ -30,41 +30,23 @@ export default {
     data () {
         return {
             girvanList: [
-                {
-                    id: "01",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
+                
                 {
                     id: "02",
                     imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    title: "12",
                 },
                 {
                     id: "03",
-                    imgUrl: require('../../../../img/gn12.png'),
+                    imgUrl: require('../../../../img/gn17.png'),
                     title: "17",
                 },
                 {
                     id: "04",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/gn100.png'),
+                    title: "100",
                 },
-                {
-                    id: "05",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
-                {
-                    id: "06",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
-                {
-                    id: "07",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
+                
             ]
         }
     }
@@ -98,8 +80,8 @@ export default {
 }
 .girvan-item {
     padding: 0 .2rem;
-    width: 7rem;
-    height: 5rem;
+    width: 14rem;
+    height: 9rem;
     display: inline-block;
 }
 .girvan-item img {

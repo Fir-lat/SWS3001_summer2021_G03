@@ -6,7 +6,7 @@
         <ul class = "girvan-list">
             <li class = "girvan-item" v-for='item in girvanList' :key='item.id'>
                 <img :src="item.imgUrl" alt="">
-                <p >GN{{item.title}}</p>
+                <p >Random result with {{item.title}}</p>
             </li>
         </ul>
         <div class = "girvan-result">
@@ -30,38 +30,33 @@ export default {
             girvanList: [
                 {
                     id: "01",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
-                },
-                {
-                    id: "02",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/lpa1.png'),
+                    title: "small dataset",
                 },
                 {
                     id: "03",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/lpa3.png'),
+                    title: "small dataset",
                 },
                 {
                     id: "04",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/lpa4.png'),
+                    title: "small dataset",
                 },
                 {
                     id: "05",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/lpa5.png'),
+                    title: "small dataset",
                 },
                 {
                     id: "06",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/lpa6.png'),
+                    title: "small dataset",
                 },
                 {
                     id: "07",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    title: "17",
+                    imgUrl: require('../../../../img/lpa7.png'),
+                    title: "big dataset",
                 },
             ]
         }
@@ -96,8 +91,8 @@ export default {
 }
 .girvan-item {
     padding: 0 .2rem;
-    width: 7rem;
-    height: 5rem;
+    width: 14rem;
+    height: 9rem;
     display: inline-block;
 }
 .girvan-item img {

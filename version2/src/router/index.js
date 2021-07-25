@@ -10,12 +10,20 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta:{
+        // 
+        title: 'SWS3001 G03'
+    }
     },
     {
       path: '/Scholar',
       name: 'Scholar',
-      component: Scholar
+      component: Scholar,
+      meta:{
+        // 
+        title: 'SWS3001 G03'
+    }
     }
   ]
 })

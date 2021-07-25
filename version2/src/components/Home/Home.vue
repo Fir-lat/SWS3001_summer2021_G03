@@ -10,6 +10,7 @@
         <home-asyn-lpa></home-asyn-lpa>
         <home-asyn-fluidc></home-asyn-fluidc>
         <home-greedy></home-greedy>
+        <home-neo4j></home-neo4j>
         <home-analysis></home-analysis>
         <home-thanks></home-thanks>
         <home-bottom></home-bottom>
@@ -30,6 +31,7 @@ import HomeAsynFluidc from './pages/AsynFluidc'
 import HomeAsynLpa from './pages/AsynLpa'
 import HomeGreedy from './pages/Greedy'
 import HomeKclique from './pages/Kclique'
+import HomeNeo4j from './pages/Visualization'
 export default {
     components: {
         HomeHeader,
@@ -45,15 +47,13 @@ export default {
         HomeAsynLpa,
         HomeGreedy,
         HomeKclique,
+        HomeNeo4j,
     },
     mounted() {
-        this.getHttp();
+        document.title="SWS3001 G03"
         
     },
     methods: {
-        getHttp:function() {
-            
-        }
     }
 }
 </script>

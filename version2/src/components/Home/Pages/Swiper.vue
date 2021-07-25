@@ -18,15 +18,15 @@ export default {
             swiperList: [
                 {
                     id: "01",
-                    imgUrl: require('../../../../img/gn12.png')
-                },
-                {
-                    id: "02",
                     imgUrl: require('../../../../img/gn17.png')
                 },
                 {
+                    id: "02",
+                    imgUrl: require('../../../../img/greedy3.png')
+                },
+                {
                     id: "03",
-                    imgUrl: require('../../../../img/gn100.png')
+                    imgUrl: require('../../../../img/withname.png')
                 }
             ],
             swiperOptions : {
