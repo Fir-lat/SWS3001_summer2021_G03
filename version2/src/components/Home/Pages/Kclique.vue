@@ -21,10 +21,10 @@
             </span>The above is the result of a small batch of data sets.</p>
             <p><span class = "iconfont icon">
                 &#xe608;
-            </span>This algorithm does not forcefully classify all points, but only finds some points in it to cluster.</p>
+            </span>This algorithm does't force every node into a certain community, only to find some dense parts to cluster.</p>
             <p><span class = "iconfont icon">
                 &#xe608;
-            </span>The blue nodes are the ones that weren't clustered.</p>
+            </span>The blue nodes are the ones that aren't clustered.</p>
         </div>
     </div>
 </template>

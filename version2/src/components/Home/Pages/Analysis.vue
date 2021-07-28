@@ -23,18 +23,18 @@ export default {
             resultList: [
                 {
                     id: "01",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    analyze: "←Better perf dsakjclsd asdjlasdjl alksdjfasd alksdjflkasdj alsdjflkasjd alsdkjflkasdj asldjflaskj asldkjfliasdj la sdjlkjas asdljfals asdlkjfas,dkjfas dfasdjl akjcsnasdkjcmasdcasmdcklasdmcasdlkcmasdcmasldkcmasdlkcmasdc ajdsncmasldkcamdsormance on small dataset in small numbers of iterations, but the community just equals to the relationship of co-author"
+                    imgUrl: require('../../../../img/field_cm3.jpg'),
+                    analyze: "The result communities we obtained from the CD algorithm shows obvious correlations in research fields within communities. For example, the scholars in the field of computer vision often need the knowledge of image processing, signal processing and machine learning, which is reflected by the result of community 11. And the scholars in communities in community 3 mainly focused on energy.We don’t find overlapping of unrelated research fields within communities, and we think that research field is one of the most important reasons of why communities are divided."
                 },
                 {
                     id: "02",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    analyze: "↑Betterkjdcasalkcmsladsmkmcas performance on small dataset in small numbers of iterations, but the community just equals to the relationship of co-author"
+                    imgUrl: require('../../../../img/field_cm9.jpg'),
+                    analyze: "We find that although some communities have several different research fields, but their institutions are the same. For example, the scholars focused on CFD, Energy systems, International Combustion Engines and Lattice Boltzmann in community 9 mainly comes from Universita Niccolo Cusano. We think that the scholars in related fields and in the same institutions are more likely to cooperate with each other, and they may be teachers and students (need more information and time to prove). Institutions might also be a reason why some scholars of the similar research fields are divided into different communities. We have found that communities 19 to 20 show almost the same research fields, but their main institutions have no overlapping. Thus we conclude that institutions and fields are the two main factors reflected by  detected communities. "
                 },
                 {
                     id: "03",
-                    imgUrl: require('../../../../img/gn12.png'),
-                    analyze: "↑Better perdsacjnasdcj,adscnasdkacsdkjncawkeneoiformance on small dataset in small numbers of iterations, but the community just equals to the relationship of co-author"
+                    imgUrl: require('../../../../img/JinHai.png'),
+                    analyze: "We take a look at a researcher’s cooperators and their community interests.  we take prof. Jin from Huazhong University of Science and Technology as an example, we can find that his cooperators mainly in the same community, all the community members are interested in computer architecture and systems. He also has some connection with some aspects like computer vision, but still mainly in computer science. We can draw a conclusion that this researcher focus on traditional computer system, his community as well."
                 },
             ]
         }

@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "fastclick": "^1.0.6",
-    "stylus": "^0.52.4",
+    "stylus": "^0.54.8",
     "stylus-loader": "^2.5.0",
     "swiper": "^5.4.5",
     "vue": "^2.5.2",

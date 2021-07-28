@@ -6,7 +6,7 @@
             </span>
             <br>
             <span class = "projectName">
-                SOC SUMMER WORKSHOP 2021 SWS3001
+                SCHOOL OF COMPUTING SUMMER WORKSHOP 2021 SWS3001
             </span>
             <br>
             <span class = "teammates">

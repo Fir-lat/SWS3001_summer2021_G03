@@ -12,7 +12,7 @@
         <div class = "girvan-result">
             <p><span class = "iconfont icon">
                 &#xe608;
-            </span>We use this algorithm to find communities in graph using Clauset-Newman-Moore greedy modularity maximization.</p>
+            </span>We use this algorithm, Clauset-Newman-Moore greedy modularity maximization, to find communities in graph.</p>
             <p><span class = "iconfont icon">
                 &#xe608;
             </span>This method currently supports the Graph class and does not consider edge weights.</p>
@@ -24,7 +24,7 @@
             </span>This algorithm runs very fast, but it cannot control the number of communities and will generate communities with a large number of points.</p>
             <p><span class = "iconfont icon">
                 &#xe608;
-            </span>If a community is too big, we can simply apply the greedy algorithm to it. The Third picture shows it.</p>
+            </span>To avoid gaint communities, we can set a max number of nodes in a community, if any community has a number of nodes more than the max number, we will use this algorithm to this subgraph again. The Third picture shows the result.</p>
         </div>
     </div>
 </template>

@@ -6,22 +6,22 @@
         <ul class = "girvan-list">
             <li class = "girvan-item" v-for='item in girvanList' :key='item.id'>
                 <img :src="item.imgUrl" alt="">
-                <p >GN with {{item.title}} iterations</p>
+                <p >GN with spring_layout {{item.title}} iterations</p>
             </li>
         </ul>
         <div class = "girvan-result">
             <p><span class = "iconfont icon">
                 &#xe608;
-            </span>The whole graph is radiating, also containing small radiating clusters, but the graph isn’t divided obviously.</p>
+            </span>This algorithm detects communities by progressively removing edges from the original graph. The algorithm removes the “most valuable” edge, traditionally the edge with the highest betweenness centrality, at each step.</p>
             <p><span class = "iconfont icon">
                 &#xe608;
-            </span>Scholars have less frequent cooperation locates on the boundary.</p>
+            </span>It has a stable and excellent performance, but you are supposed to fix the number of communities before running the algorithm, so you hace to try many times to find a good division.</p>
             <p><span class = "iconfont icon">
                 &#xe608;
-            </span>At the central part, the colors are confusing.</p>
+            </span>And as the scale of the graph becomes large, this algorithm gets slow quickly due to its high complexity.</p>
             <p><span class = "iconfont icon">
                 &#xe608;
-            </span>The modularity shows a tendency of decreasing at the very begin(30 iterations)</p>
+            </span>There is also a big problem that this algorithm removes edges from the original graph, so after the community detection, some edges would lose which would be difficult to handle.</p>
         </div>
     </div>
 </template>

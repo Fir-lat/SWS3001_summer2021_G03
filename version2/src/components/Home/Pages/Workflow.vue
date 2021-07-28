@@ -1,7 +1,7 @@
 <template>
     <div class = "workflow">
         <h2>Workflow</h2>
-        <img src="../../../../img/WOrkFlow.png" alt="">
+        <img src="../../../../img/WorkFlow.png" alt="">
     </div>
 </template>
 <script>

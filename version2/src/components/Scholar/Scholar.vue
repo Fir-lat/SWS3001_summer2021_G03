@@ -27,13 +27,13 @@ export default {
         }
     },
     mounted() {
-        document.title="SWS3001 G03"
+        document.title="NUS2021-SWS3001-G03"
     },
     methods: {
         inputSearch(param) {
             this.inputName = param;
             this.clearResult();
-            this.$http.get("http://localhost:8080/static/mock/data.json")
+            this.$http.get("https://nus2021-sw3001-g03.top/files/data.json")
             .then((res)=>{
                 console.log(res);
                 var scholarResult = res.data.data;

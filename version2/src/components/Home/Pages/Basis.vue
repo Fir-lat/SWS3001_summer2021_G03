@@ -9,10 +9,10 @@
                 There have been research social network websites dedicated to scholars, such as Google Scholar.
             </p>
             <p><span class ="iconfont">&#xe6f6;</span>
-                Collect the information of cooperation between scholars by Google Scholar Co-Authors API.
+                Collect the cooperation information of more than 3k scholars and 7k relations by SerpApi.
             </p>
             <p><span class ="iconfont">&#xe6f6;</span>
-                Involve multiple algorithms to cluster the communities of scholars  from multiple universities
+                Involve multiple algorithms to cluster the communities of scholars from multiple affilliations.
             </p>
         </div>
         <div id="mid" class="basis-mid">
@@ -31,7 +31,7 @@
                 Overview
             </h2>
             <p><span class ="iconfont">&#xe6f6;</span>
-                We collected the co-authors of 1490 preeminent scholars and calculated the similarity basing on the times they have collaborated. After formed graph, we adopted multiple algorithms to cluster the communities. What we expect to find out is that scholars are divided by specific fields or laboratories rather than universities.
+                We collected the collaboration information and build it into a natural graph. After the graph is formed, we adopted multiple algorithms to cluster the communities. What we expect to find out is that scholars are divided by specific fields or laboratories rather than affilliations.
             </p>
         </div>
         
